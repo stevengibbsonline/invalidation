@@ -6,7 +6,6 @@
 </script>
 <h1>Page</h1>
 <h2>Subscription Data at Page</h2>
-{subscription.data}
-
+{subscription?.data}
 <hr/>
 <a href="/subscription/edit">Edit Route</a>

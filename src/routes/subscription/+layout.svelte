@@ -4,17 +4,11 @@
 
 let {data, children} = $props();
 
-let subscription = $state();
 //setContext('subscription', {get subscription(){return subscription}})
-setContext('subscription', ()=>subscription)
-
-if(!subscription){
-    subscription = new Subscription(data.initialData)
-}
+setContext('subscription', ()=>data.subscription)
 
 
 </script>
 
-Subscription Data at layout:
-{subscription.data}
+Subscription Data at layout: {data.subscription?.data}
 {@render children()}

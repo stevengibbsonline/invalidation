@@ -14,4 +14,4 @@
 
 <h1>Edit Route</h1>
 <button onclick={mutateDataAndInvalidateLoader}>Mutate class and go back</button>
-{subscription.data}
+{subscription?.data}

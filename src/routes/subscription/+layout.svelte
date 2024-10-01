@@ -5,7 +5,9 @@
 let {data, children} = $props();
 
 let subscription = $state();
-setContext('subscription', {get subscription(){return subscription}})
+//setContext('subscription', {get subscription(){return subscription}})
+setContext('subscription', ()=>subscription)
+
 if(!subscription){
     subscription = new Subscription(data.initialData)
 }

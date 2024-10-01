@@ -2,8 +2,8 @@
 	import { goto } from '$app/navigation';
 	import { getContext } from 'svelte';
 
-    const subscriptionContext = getContext('subscription')
-    let {subscription} = $derived(subscriptionContext)
+    const subscription = getContext('subscription')()
+    //let {subscription} = $derived(subscriptionContext)
 
     async function mutateDataAndInvalidateLoader(e){
         await subscription.mutateData(Math.floor(Math.random() * 10))

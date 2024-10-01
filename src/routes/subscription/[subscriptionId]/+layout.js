@@ -3,7 +3,7 @@ import Subscription from "$lib/subscription.svelte";
 
 
 /** @type {import('./$types').PageLoad} */
-export async function load({ cookies, data }) {
+export async function load({ cookies, data, params }) {
     console.log('layout loader universal ran')
     let subscription;
     if(browser && !subscription){

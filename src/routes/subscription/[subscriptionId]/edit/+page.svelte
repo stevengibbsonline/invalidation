@@ -7,7 +7,7 @@
 
     async function mutateDataAndInvalidateLoader(e){
         await subscription.mutateData(Math.floor(Math.random() * 10))
-        goto('/subscription')
+        goto('/subscription/1')
     }
 
 </script>

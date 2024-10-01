@@ -8,4 +8,4 @@
 <h2>Subscription Data at Page</h2>
 {subscription?.data}
 <hr/>
-<a href="/subscription/edit">Edit Route</a>
+<a href="/subscription/1/edit">Edit Route</a>
